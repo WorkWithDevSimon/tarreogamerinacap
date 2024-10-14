@@ -1,0 +1,71 @@
+.centrar-container {
+    display: flex;
+    /* Usar flexbox para centrar */
+    justify-content: center;
+    /* Centrando horizontalmente */
+    align-items: flex-start;
+    /* Alinear al inicio verticalmente */
+    min-height: 100vh;
+    /* Ocupa al menos toda la altura de la ventana */
+    padding-top: 100px;
+    /* Espacio superior opcional */
+}
+
+.reglas-container {
+    background-color: #000;
+    /* Fondo negro */
+    border: 2px solid #ff0000;
+    /* Bordes rojos */
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    max-height: 80vh;
+    /* Altura máxima del contenedor */
+    overflow-y: auto;
+    /* Permitir desplazamiento vertical */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    /* Centrando el texto */
+    animation: fadeIn 0.5s ease;
+    /* Animación al cargar */
+}
+
+.reglas-container h2 {
+    color: #ff0000;
+    /* Color del título en rojo */
+}
+
+.reglas-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reglas-container li {
+    background-color: #ff0000;
+    /* Fondo rojo para los elementos */
+    color: #fff;
+    /* Texto blanco */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.reglas-container li:hover {
+    background-color: #c40000;
+    /* Rojo más oscuro al pasar el mouse */
+    transform: scale(1.05);
+    /* Escala al pasar el mouse */
+    color: #000;
+}
+
+/* Animación para la aparición del contenedor */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

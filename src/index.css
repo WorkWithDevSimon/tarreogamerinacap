@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* Negro con un poco de transparencia */
+    font-family: "Arial", sans-serif;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Asegura que el contenido llene la pantalla */
+}

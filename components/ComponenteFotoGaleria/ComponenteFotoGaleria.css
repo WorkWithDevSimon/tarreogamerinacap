@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* Cambia 300px al tamaño deseado */
+    gap: 15px;
+    /* Espacio entre las imágenes */
+    width: 100%;
+}
+
+.galeria img {
+    width: 100%;
+    /* Ocupa el 100% del contenedor */
+    height: 100%;
+    /* Asegura que ocupa el espacio verticalmente */
+    aspect-ratio: 1;
+    /* Mantiene la proporción cuadrada */
+    object-fit: cover;
+    /* Cubre el espacio manteniendo el aspecto */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre la imagen */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Sombra para efecto 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transición suave */
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}

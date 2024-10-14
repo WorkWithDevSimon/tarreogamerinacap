@@ -1,0 +1,123 @@
+.cronograma-container {
+    width: 100%;
+    text-align: center;
+    /* Centrar contenido */
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cronograma-table {
+    width: 100%;
+    /* Asegurarse de que la tabla ocupe todo el ancho */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: white;
+    /* Texto blanco */
+}
+
+.cronograma-header {
+    border: 1px solid red;
+    /* Bordes rojos */
+    padding: 8px;
+    background-color: red;
+    /* Cabeceras rojas */
+    font-weight: bold;
+}
+
+.cronograma-cell {
+    border: 1px solid red;
+    /* Bordes rojos */
+    width: auto;
+    text-align: center;
+
+}
+
+.cronograma-note {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    /* Tamaño de texto responsivo para la nota */
+    color: #aaa;
+    /* Color gris claro para la nota */
+}
+
+/* Responsividad */
+@media (max-width: 359px) {
+
+    .cronograma-cell {
+        border: 1px solid red;
+        width: 350px;
+        text-align: center;
+
+
+    }
+
+    .cronograma-table {
+        display: grid;
+        /* Usar grid para la tabla */
+        justify-content: center;
+        /* Centrar el contenido */
+        align-items: center;
+        text-align: center;
+        /* Alinear el contenido */
+        width: 100%;
+        /* Asegura que ocupe todo el ancho */
+        margin: 0 auto;
+        /* Centrar tabla */
+        overflow-x: auto;
+        /* Scroll horizontal si es necesario */
+    }
+
+    thead {
+        display: none;
+        /* Ocultar encabezados */
+    }
+
+    tbody {
+        display: block;
+        /* Cada fila como bloque */
+    }
+
+    tbody tr {
+        display: block;
+        /* Cambiar a bloque */
+        margin-bottom: 15px;
+        /* Espaciado entre filas */
+        border: 1px solid red;
+        /* Bordes rojos en filas */
+        text-align: center;
+
+    }
+
+    tbody td {
+        display: block;
+        /* Cambiar a bloque */
+        padding: 10px;
+        /* Espacio dentro de las celdas */
+        border-bottom: 1px solid red;
+        /* Bordes rojos en celdas */
+        line-height: 1.5;
+        /* Espaciado entre líneas */
+        margin-bottom: 5px;
+        /* Espacio entre celdas */
+        text-align: center;
+    }
+
+    tbody td::before {
+        content: attr(data-header);
+        /* Mostrar el nombre del encabezado */
+        font-weight: bold;
+        /* Negrita */
+        color: white;
+        /* Color del texto */
+        margin-bottom: 5px;
+        /* Espacio entre el encabezado y el contenido */
+        display: block;
+        /* Asegurar que se comporte como bloque */
+        text-align: center;
+    }
+
+    tbody div {
+        margin-top: 5px;
+        /* Espacio entre los equipos */
+        text-align: center;
+    }
+}

@@ -1,0 +1,24 @@
+.TitulofotoGaleria {
+    text-align: center;
+    /* Centrar el texto */
+    font-size: 2.2rem;
+    /* Tamaño de fuente grande */
+    color: white;
+    /* Color principal del texto */
+    text-shadow: 2px 2px 4px black, 0 0 25px red, 0 0 5px darkred;
+    /* Efecto brillante */
+    animation: brillo 1.5s infinite alternate;
+    /* Animación de brillo */
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+@keyframes brillo {
+    0% {
+        text-shadow: 2px 2px 4px black, 0 0 10px red, 0 0 5px darkred;
+    }
+
+    100% {
+        text-shadow: 2px 2px 4px black, 0 0 25px red, 0 0 10px darkred;
+    }
+}

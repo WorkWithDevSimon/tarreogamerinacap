@@ -1,0 +1,66 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    box-shadow: 0px 0px 10px rgb(277, 288, 237);
+    border-radius: 2px solid rgba(255, 255, 255, 0.18);
+    margin-top: auto;
+    color: white;
+}
+
+.footer_conten h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    text-align: center;
+    background: none;
+    /* Estilos generales para el h2, si es necesario */
+    /* Ajusta el tamaño según lo necesites */
+    color: white;
+    /* Color general del texto */
+}
+
+
+
+
+.TituloFooter {
+    text-align: center;
+    /* Centrar el texto */
+    font-size: 1.5rem;
+    /* Tamaño de fuente grande */
+    color: white;
+    /* Color principal del texto */
+    text-shadow: 2px 2px 4px black, 0 0 25px red, 0 0 5px darkred;
+    /* Efecto brillante */
+    animation: brillo 1.5s infinite alternate;
+    /* Animación de brillo */
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+@keyframes brillo {
+    0% {
+        text-shadow: 2px 2px 4px black, 0 0 10px red, 0 0 5px darkred;
+    }
+
+    100% {
+        text-shadow: 2px 2px 4px black, 0 0 25px red, 0 0 10px darkred;
+    }
+}
+
+.redes_sociales {
+    display: flex;
+    width: auto;
+    gap: 2rem;
+    margin-top: 1em;
+    justify-content: center;
+
+
+}
+
+
+.redes_sociales img {
+    width: 25px;
+    height: 25px;
+}
