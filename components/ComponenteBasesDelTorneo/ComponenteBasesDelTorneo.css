@@ -6,8 +6,8 @@
     /* Espacio entre tarjetas */
     justify-items: center;
     /* Centra las tarjetas horizontalmente */
-    padding: 20px;
-    margin: 80px 20px;
+    padding: auto;
+    margin: 50px 20px;
     /* Margen superior e inferior, y laterales */
     color: #fff;
     font-family: Arial, sans-serif;
@@ -20,13 +20,10 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s;
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     /* Limita el tamaño máximo de las tarjetas */
 }
 
-.torneo-card:hover {
-    transform: scale(1.02);
-}
 
 
 

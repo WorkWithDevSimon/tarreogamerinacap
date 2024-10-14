@@ -9,7 +9,8 @@
     /* Efecto brillante */
     animation: brillo 1.5s infinite alternate;
     /* Animación de brillo */
-    margin: 100px 0;
+    margin: 90px 0;
+    margin-bottom: 20px;
 }
 
 @keyframes brillo {
