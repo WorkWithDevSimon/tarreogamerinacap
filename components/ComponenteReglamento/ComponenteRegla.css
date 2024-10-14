@@ -5,10 +5,9 @@
     /* Centrando horizontalmente */
     align-items: flex-start;
     /* Alinear al inicio verticalmente */
-    min-height: 100vh;
-    /* Ocupa al menos toda la altura de la ventana */
-    padding-top: 100px;
+    padding-top: 50px;
     /* Espacio superior opcional */
+    margin: 30px;
 }
 
 .reglas-container {
@@ -18,8 +17,8 @@
     /* Bordes rojos */
     border-radius: 8px;
     padding: 20px;
-    max-width: 600px;
-    max-height: 80vh;
+    max-width: 900px;
+    max-height: 90vh;
     /* Altura máxima del contenedor */
     overflow-y: auto;
     /* Permitir desplazamiento vertical */
