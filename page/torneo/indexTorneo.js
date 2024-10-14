@@ -28,7 +28,7 @@ const LeagueofLegends = [
     {
         grupo: "Papafritas",
         carrera: "Informatica",
-        integrantes: ["Simon Santibañez", "Tomas Nose", "Necesito informacion"]
+        integrantes: ["Simon Santibañez", "Camila", "Necesito informacion"]
     },
     {
         grupo: "Papafritas",
