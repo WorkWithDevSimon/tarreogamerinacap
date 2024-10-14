@@ -1,0 +1,93 @@
+.torneos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Distribuye los elementos */
+    gap: 20px;
+    /* Espacio entre tarjetas */
+    justify-items: center;
+    /* Centra las tarjetas horizontalmente */
+    padding: 20px;
+    margin: 80px 20px;
+    /* Margen superior e inferior, y laterales */
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.torneo-card {
+    border: 2px solid #c81010;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    width: 100%;
+    max-width: 600px;
+    /* Limita el tamaño máximo de las tarjetas */
+}
+
+.torneo-card:hover {
+    transform: scale(1.02);
+}
+
+
+
+.titulo_base {
+    text-align: center;
+    /* Centrar el texto */
+    font-size: 2rem;
+    /* Tamaño de fuente grande */
+    color: white;
+    /* Color principal del texto */
+    text-shadow: 2px 2px 4px black, 0 0 25px red, 0 0 5px darkred;
+    /* Efecto brillante */
+    animation: brillo 1.5s infinite alternate;
+    /* Animación de brillo */
+    margin: 20px 0;
+}
+
+@keyframes brillo {
+    0% {
+        text-shadow: 2px 2px 4px black, 0 0 10px red, 0 0 5px darkred;
+    }
+
+    100% {
+        text-shadow: 2px 2px 4px black, 0 0 25px red, 0 0 10px darkred;
+    }
+}
+
+.torneo-card ul {
+    list-style-type: none;
+    padding: 0;
+    border: 2px solid #f44336;
+    overflow: hidden;
+    margin: 5px 0;
+    border-radius: 6px;
+}
+
+.torneo-card li {
+    padding: 5px 0;
+    color: white;
+}
+
+/* Media query para pantallas de 350px o menores */
+@media (max-width: 350px) {
+    .torneos-container {
+        grid-template-columns: 1fr;
+        /* Acomoda los elementos en una sola columna */
+        padding: 10px;
+        /* Reduce el padding para pantallas más pequeñas */
+        margin: 20px 10px;
+        /* Reduce el margen */
+    }
+
+    .torneo-card {
+        padding: 15px;
+        /* Reduce el padding de las tarjetas para caber mejor en pantallas pequeñas */
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+    }
+
+    .titulo_base {
+        font-size: 1.5em;
+        /* Ajusta el tamaño del título */
+    }
+}

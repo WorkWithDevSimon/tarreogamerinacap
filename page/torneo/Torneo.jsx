@@ -4,6 +4,7 @@ import { ComponenteCompetidores } from '../../components/ComponenteTorneo/Compon
 import { ComponeteCompetidores_2 } from '../../components/ComponenteTorneo/ComponeteCompetidores_2';
 import { LeagueofLegends, Counter_strike, valorant, competicionIndividual, VideojuegoDatos } from "./indexTorneo";
 import { LeagueofLegends_2, counter_strike, VALORANT_logo4, fornite1, mortal, easportsfc24, mitosYleyenda, pokemon } from "../../img/indexImg";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -12,6 +13,13 @@ export const Torneo = () => {
         <>
             <ComponetesVideojuegos VideojuegoDatos={VideojuegoDatos}></ComponetesVideojuegos>
             <h1 className='tituloTorneo'>Bienvenido al torneo 2024</h1>
+            <div className="button_container">
+                <button className='boton_torno'>
+                    <NavLink to='/BasesDelTorneo'  >
+                        ¡Bases del Torneo!
+                    </NavLink>
+                </button>
+            </div>
             <h1 className='estilo_seccion_juegos'>Juegos de PC</h1>
             {/* ------------------------- */}
             <ComponenteCompetidores

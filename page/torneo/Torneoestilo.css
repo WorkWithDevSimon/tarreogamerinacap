@@ -27,3 +27,87 @@
         text-shadow: 2px 2px 4px black, 0 0 25px red, 0 0 10px darkred;
     }
 }
+
+
+
+.button_container {
+    background: none;
+    z-index: 1;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.boton_torno {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 2px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Transición suave */
+    border-radius: 5px;
+    animation: deslizadoAnimacion 2s infinite;
+    /* Animación de movimiento */
+    position: relative;
+    /* Para mantener el botón en su lugar */
+}
+
+.boton_torno a {
+    color: white;
+    /* Color del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    padding: 12px;
+    overflow: hidden;
+}
+
+.boton_torno:hover {
+    background-color: darkred;
+    /* Color al pasar el mouse */
+}
+
+/* Definición de la animación */
+@keyframes deslizadoAnimacion {
+    0% {
+        transform: translate(0, 0);
+        /* Posición inicial */
+    }
+
+    20% {
+        transform: translate(15px, 0);
+        /* Desplazamiento a la derecha */
+    }
+
+    40% {
+        transform: translate(-10px, 0);
+        /* Desplazamiento a la izquierda */
+    }
+
+    60% {
+        transform: translate(0, -10px);
+        /* Desplazamiento hacia arriba */
+    }
+
+    80% {
+        transform: translate(0, 10px);
+        /* Desplazamiento hacia abajo */
+    }
+
+    100% {
+        transform: translate(0, 0);
+        /* Regresa a la posición inicial */
+    }
+}
+
+.boton_torno a {
+    background: none;
+    color: #000;
+}
+
+
+
+.boton_torno:hover {
+    background-color: darkred;
+}

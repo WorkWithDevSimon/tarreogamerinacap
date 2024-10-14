@@ -68,10 +68,10 @@
      background-color: red;
      color: white;
      border: none;
-     padding: 15px 30px;
+     padding: 15px 15px;
      font-size: 16px;
      cursor: pointer;
-      /* Transición suave */
+     /* Transición suave */
      border-radius: 5px;
      animation: deslizadoAnimacion 2s infinite;
      /* Animación de movimiento */
@@ -84,6 +84,9 @@
      /* Color del texto */
      text-decoration: none;
      /* Sin subrayado */
+     background: none;
+     padding: 15px 30px;
+     overflow: hidden;
  }
 
  .boton:hover {
@@ -124,16 +127,7 @@
      }
  }
 
- .boton a {
-     background: none;
-     color: #000;
- }
 
-
-
- .boton:hover {
-     background-color: darkred;
- }
 
 
  /* --------------------------------------- */

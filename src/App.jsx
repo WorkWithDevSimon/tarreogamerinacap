@@ -13,6 +13,10 @@ const Torneo = lazy(() => import("../page/torneo/Torneo").then(x => {
   console.log('Torneo cargado');
   return { default: x.Torneo };
 }));
+const BasesDelTorneo = lazy(() => import("../page/basestorneo/BasesDelTorneo").then(x => {
+  console.log('Bases Del Torneo cargado');
+  return { default: x.BasesDelTorneo };
+}));
 const Cronograma = lazy(() => import("../page/cronograma/Cronograma").then(x => {
   console.log('Cronograma cargado');
   return { default: x.Cronograma };
@@ -35,6 +39,7 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/Torneo' element={<Torneo />} />
+            <Route path='/BasesDelTorneo' element={<BasesDelTorneo />} />
             <Route path='/Cronograma' element={<Cronograma />} />
             <Route path='/Reglamento' element={<Reglamento />} />
             <Route path='/Fotogalería' element={<Fotogalería />} />

@@ -158,56 +158,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------ */
 .competidores_2 {
     margin: 40px auto;
@@ -222,9 +172,7 @@
     text-align: center;
 }
 
-
-
-ul li {
+.aboutContenedor ul li {
     margin: 10px 0;
 }
 
