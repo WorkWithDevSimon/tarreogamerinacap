@@ -3,23 +3,23 @@ import "./ComponenteCronograma.css";
 export const ComponenteCronograma = ({ CompetidoresPlataforma, Recuerdo }) => {
   return (
     <>
-      <section className="cronograma-container">
-        <table className="cronograma-table">
+      <section className="cronogramacontenedor">
+        <table className="cronogramatabla">
           <thead>
             <tr>
-              <th className="cronograma-header">Juego</th>
-              <th className="cronograma-header">Plataforma</th>
-              <th className="cronograma-header">Hora</th>
-              <th className="cronograma-header">Equipos</th>
+              <th className="cronogramacabezera">Juego</th>
+              <th className="cronogramacabezera">Plataforma</th>
+              <th className="cronogramacabezera">Hora</th>
+              <th className="cronogramacabezera">Equipos</th>
             </tr>
           </thead>
           <tbody>
             {CompetidoresPlataforma.map((juego, index) => (
               <tr key={index}>
-                <td className="cronograma-cell" data-header="Juego">{juego.nombre}</td>
-                <td className="cronograma-cell" data-header="Plataforma">{juego.plataforma}</td>
-                <td className="cronograma-cell" data-header="Hora">{juego.hora}</td>
-                <td className="cronograma-cell" data-header="Equipos">
+                <td className="cronogramaParteDeTd" data-header="Juego">{juego.nombre}</td>
+                <td className="cronogramaParteDeTd" data-header="Plataforma">{juego.plataforma}</td>
+                <td className="cronogramaParteDeTd" data-header="Hora">{juego.hora}</td>
+                <td className="cronogramaParteDeTd" data-header="Equipos">
                   {juego.equipos.map((equipo, i) => (
                     <div key={i}>
                       {equipo.nombre}  {equipo.rival}
@@ -30,7 +30,7 @@ export const ComponenteCronograma = ({ CompetidoresPlataforma, Recuerdo }) => {
             ))}
           </tbody>
         </table>
-        <p className="cronograma-note">
+        <p className="cronogramanota">
           {Recuerdo}
         </p>
       </section>

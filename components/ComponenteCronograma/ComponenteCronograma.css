@@ -1,4 +1,4 @@
-.cronograma-container {
+.cronogramacontenedor {
     width: 100%;
     text-align: center;
     /* Centrar contenido */
@@ -6,7 +6,7 @@
     margin-bottom: 40px;
 }
 
-.cronograma-table {
+.cronogramatabla {
     width: 100%;
     /* Asegurarse de que la tabla ocupe todo el ancho */
     border-collapse: collapse;
@@ -15,7 +15,7 @@
     /* Texto blanco */
 }
 
-.cronograma-header {
+.cronogramacabezera {
     border: 1px solid red;
     /* Bordes rojos */
     padding: 8px;
@@ -24,7 +24,7 @@
     font-weight: bold;
 }
 
-.cronograma-cell {
+.cronogramaParteDeTd {
     border: 1px solid red;
     /* Bordes rojos */
     width: auto;
@@ -32,7 +32,7 @@
 
 }
 
-.cronograma-note {
+.cronogramanota {
     font-size: clamp(0.8rem, 2vw, 1rem);
     /* Tamaño de texto responsivo para la nota */
     color: #aaa;
@@ -42,7 +42,7 @@
 /* Responsividad */
 @media (max-width: 359px) {
 
-    .cronograma-cell {
+    .cronogramaParteDeTd {
         border: 1px solid red;
         width: 350px;
         text-align: center;
@@ -50,7 +50,7 @@
 
     }
 
-    .cronograma-table {
+    .cronogramatabla {
         display: grid;
         /* Usar grid para la tabla */
         justify-content: center;
