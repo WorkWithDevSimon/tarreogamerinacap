@@ -23,7 +23,8 @@ export const ComponenteNav = () => {
                     Ta<span>rr</span>eo Ga<span>me</span>r
                 </NavLink>
 
-                <nav className={`nav ${menuAbierto ? 'open' : 'closed'}`}>
+                {/* Añadir aria-expanded y role para mejorar la accesibilidad */}
+                <nav className={`nav ${menuAbierto ? 'open' : 'closed'}`} aria-expanded={menuAbierto} role="navigation">
                     <ul>
                         {[
                             { to: '/', label: 'Inicio' },
@@ -37,6 +38,7 @@ export const ComponenteNav = () => {
                                     to={to}
                                     className={({ isActive }) => (isActive ? 'active' : '')}
                                     onClick={cerrarMenu}
+                                    role="menuitem"
                                 >
                                     {label}
                                 </NavLink>
