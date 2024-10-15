@@ -1,9 +1,10 @@
 .header {
-    padding-bottom: 4rem;
+    padding-bottom: 100rem;
+
 }
 
 .container_nav {
-    padding: 1.6rem 2rem;
+    padding: 1.5rem 2rem;
     max-width: 100%;
     margin: 0 auto;
     position: fixed;
@@ -14,8 +15,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    box-shadow: 0px 0px 30px rgb(255, 255, 255);
-    /* Valor RGB corregido */
+    box-shadow: 0px 0px 30px rgb(277, 288, 237);
     z-index: 10;
 }
 
@@ -29,16 +29,20 @@
     text-shadow: 0 0 25px #6a0000;
     color: red;
     transition: color 0.3s ease;
+    /* Para un cambio suave de color */
 }
 
+/* Cambiar el color del span al pasar el cursor sobre la logo */
 .logo:hover span {
     color: red;
+    /* Cambia a rojo al pasar el cursor */
 }
 
 .nav ul li {
     position: relative;
     float: left;
 }
+
 
 .nav ul li a {
     display: block;
@@ -49,14 +53,18 @@
     font-size: 17px;
 }
 
+/* Color rojo por defecto para el enlace activo */
 .nav ul li a.active {
     text-shadow: 0 0 25px #6a0000;
     color: #ff4000;
 }
 
+/* Hover effect */
 .nav ul li a:hover {
     text-shadow: 0 0 25px #6a0000;
+    /* Mantener efecto de sombra */
     color: red;
+    /* Cambiar color a rojo al pasar el cursor */
 }
 
 .logo:hover {
@@ -72,10 +80,9 @@
     cursor: pointer;
     outline: none;
     display: none;
-    width: 44px;
-    /* Mejora de accesibilidad para pantallas táctiles */
-    height: 44px;
 }
+
+
 
 .menu_icono img {
     display: block;
@@ -93,6 +100,7 @@
         display: grid;
         grid-template-columns: max-content max-content;
         grid-template-areas: "logo icono";
+
     }
 
     .logo {
@@ -103,12 +111,14 @@
         position: relative;
         grid-area: icono;
         z-index: 10;
+        transform: var(--icon1);
         cursor: pointer;
     }
 
     .nav {
         background-color: #000000;
         width: 100%;
+        max-width: 100%;
         position: fixed;
         top: 0;
         right: 0;
@@ -116,25 +126,26 @@
         padding: 140px 0;
         display: grid;
         align-items: center;
-        transform: translateX(100%);
-        /* Alternativa a clip-path */
-        transition: transform 0.6s ease-in-out;
+        clip-path: inset(0 0 0 100%);
+        transition: clip-path .6s ease-in-out;
         z-index: 10;
     }
 
     .nav.open {
-        transform: translateX(0);
-        /* Alternativa a clip-path */
+        clip-path: inset(0 0 0 0);
     }
 
     .nav.closed {
-        transform: translateX(100%);
-        /* Alternativa a clip-path */
+        clip-path: inset(0 0 0 100%);
     }
 
     .nav ul li {
         width: 100%;
         text-align: center;
+        /* padding: 20px; */
+        border-radius: 2px solid white;
         margin: 3px 0;
     }
+
+
 }
