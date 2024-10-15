@@ -1,6 +1,7 @@
 import { ComponenteCronograma } from "../../components/ComponenteCronograma/ComponenteCronograma"
 import { ComponenteInicioTarreo } from "../../components/ComponenteCronograma/ComponenteInicioTarreo";
-import { datosDelComiendoYfinalDelTarreo, CompetidoresPlataformaPC, CompetidoresPlataformaconsola, Competidoresjuego_de_Mesa } from "./indexcronograma";
+import { datosDelComiendoYfinalDelTarreo, CompetidoresPlataformaPC, 
+    CompetidoresPlataformaconsola, Competidoresjuego_de_Mesa } from "./indexcronograma";
 import "./Cronograma.css"
 
 export const Cronograma = () => {
