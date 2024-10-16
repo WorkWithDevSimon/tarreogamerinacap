@@ -190,5 +190,19 @@
         color: red;
     }
 
-    
+    /* Bloquear el scroll en el body cuando el menú está abierto */
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    /* Permitir el scroll dentro del menú cuando está abierto */
+    .nav.open {
+        height: 100vh;
+        /* Que ocupe toda la pantalla */
+        overflow-y: auto;
+        /* Activar scroll dentro del nav */
+    }
+
+
+
 }

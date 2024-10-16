@@ -1,27 +1,12 @@
 import "./ComponenteNav.css";
-import React, { useState, useCallback, useEffect } from 'react';
-import { close, menu } from "../../icon/indexicon";
-import { NavLink, useLocation } from 'react-router-dom';
+ import { close, menu } from "../../icon/indexicon";
+import { NavLink } from 'react-router-dom';
+
+import usarMenu from "../../hook/usarMenu";
+
 
 export const ComponenteNav = () => {
-    const [menuAbierto, setMenuAbierto] = useState(false);
-    const location = useLocation(); // Obtiene la ubicación actual
-
-    // Función para alternar el estado del menú
-    const alternarMenu = useCallback(() => {
-        setMenuAbierto(prev => !prev);
-    }, []);
-
-    // Función para cerrar el menú
-    const cerrarMenu = useCallback(() => {
-        setMenuAbierto(false);
-    }, []);
-
-    // Efecto que se ejecuta al cambiar de ruta
-    useEffect(() => {
-        // Desplazarse al principio de la página sin animación visible
-        document.documentElement.scrollTo(0, 0);
-    }, [location]);
+    const { menuAbierto, alternarMenu, cerrarMenu } = usarMenu(); // Usar el hook
 
     return (
         <header className="header">
