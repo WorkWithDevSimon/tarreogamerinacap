@@ -56,55 +56,76 @@
  }
 
 
-.button_contenedor{
-    padding: 30px;
-}
+ .button_contenedor {
+     padding: 30px;
+ }
 
  .boton_Inicio {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 15px 30px; /* Añadir más padding horizontal para un mejor tamaño del botón */
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    animation: deslizadoAnimacion 2s infinite; /* Nombre de la animación corregido */
-    position: relative;
-    z-index: 1;
-    transition: background-color 0.3s ease; /* Transición para hover */
-}
+     background-color: red;
+     color: white;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     animation: deslizadoAnimacion 2s infinite;
+     /* Nombre de la animación corregido */
+     position: relative;
+     z-index: 1;
+     transition: background-color 0.3s ease;
+     /* Transición para hover */
+ }
 
-.boton_Inicio a {
-    color: white;
-    text-decoration: none;
-    background: none;
-}
+ .boton_Inicio a {
+     color: white;
+     text-decoration: none;
+     padding: 15px 28px;
+     /* Tamaño más adecuado */
+     width: 200px;
+     display: inline-block;
+     /* Hace que el enlace se comporte como un bloque */
+     text-align: center;
+     /* Centra el texto dentro del botón */
+     border-radius: 5px;
+     /* Opcional: bordes redondeados */
+     background: none;
+ }
 
-.boton_Inicio:hover {
-    background-color: darkred; /* Color de fondo al pasar el mouse */
-}
+ .boton_Inicio:hover {
+     background-color: darkred;
+     /* Color de fondo al pasar el mouse */
+ }
 
-/* Definición de la animación */
-@keyframes deslizadoAnimacion {
-    0% {
-        transform: translate(0, 0); /* Posición inicial */
-    }
-    20% {
-        transform: translate(15px, 0); /* Desplazamiento a la derecha */
-    }
-    40% {
-        transform: translate(-10px, 0); /* Desplazamiento a la izquierda */
-    }
-    60% {
-        transform: translate(0, -10px); /* Desplazamiento hacia arriba */
-    }
-    80% {
-        transform: translate(0, 10px); /* Desplazamiento hacia abajo */
-    }
-    100% {
-        transform: translate(0, 0); /* Regresa a la posición inicial */
-    }
-}
+ /* Definición de la animación */
+ @keyframes deslizadoAnimacion {
+     0% {
+         transform: translate(0, 0);
+         /* Posición inicial */
+     }
+
+     20% {
+         transform: translate(15px, 0);
+         /* Desplazamiento a la derecha */
+     }
+
+     40% {
+         transform: translate(-10px, 0);
+         /* Desplazamiento a la izquierda */
+     }
+
+     60% {
+         transform: translate(0, -10px);
+         /* Desplazamiento hacia arriba */
+     }
+
+     80% {
+         transform: translate(0, 10px);
+         /* Desplazamiento hacia abajo */
+     }
+
+     100% {
+         transform: translate(0, 0);
+         /* Regresa a la posición inicial */
+     }
+ }
 
 
 

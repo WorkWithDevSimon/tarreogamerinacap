@@ -1,10 +1,9 @@
 .header {
-    padding-bottom: 100rem;
-
+    padding-bottom: 4rem;
 }
 
 .container_nav {
-    padding: 1.5rem 2rem;
+    padding: 1.6rem 2rem;
     max-width: 100%;
     margin: 0 auto;
     position: fixed;
@@ -15,7 +14,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    box-shadow: 0px 0px 30px rgb(277, 288, 237);
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+    /* Valor RGB corregido */
     z-index: 10;
 }
 
@@ -29,20 +29,16 @@
     text-shadow: 0 0 25px #6a0000;
     color: red;
     transition: color 0.3s ease;
-    /* Para un cambio suave de color */
 }
 
-/* Cambiar el color del span al pasar el cursor sobre la logo */
 .logo:hover span {
     color: red;
-    /* Cambia a rojo al pasar el cursor */
 }
 
 .nav ul li {
     position: relative;
     float: left;
 }
-
 
 .nav ul li a {
     display: block;
@@ -53,18 +49,14 @@
     font-size: 17px;
 }
 
-/* Color rojo por defecto para el enlace activo */
 .nav ul li a.active {
     text-shadow: 0 0 25px #6a0000;
     color: #ff4000;
 }
 
-/* Hover effect */
 .nav ul li a:hover {
     text-shadow: 0 0 25px #6a0000;
-    /* Mantener efecto de sombra */
     color: red;
-    /* Cambiar color a rojo al pasar el cursor */
 }
 
 .logo:hover {
@@ -80,9 +72,10 @@
     cursor: pointer;
     outline: none;
     display: none;
+    width: 44px;
+    /* Mejora de accesibilidad para pantallas táctiles */
+    height: 44px;
 }
-
-
 
 .menu_icono img {
     display: block;
@@ -91,61 +84,111 @@
 }
 
 @media screen and (max-width: 800px) {
+
+    /* Ícono del menú (hamburguesa) */
     .menu_icono {
         display: block;
-    }
-
-    .container_nav {
-        height: 70px;
-        display: grid;
-        grid-template-columns: max-content max-content;
-        grid-template-areas: "logo icono";
-
-    }
-
-    .logo {
-        grid-area: logo;
-    }
-
-    .menu_icono {
         position: relative;
-        grid-area: icono;
-        z-index: 10;
-        transform: var(--icon1);
+        height: 100%;
+        /* Alinea el ícono en altura con la barra de navegación */
+        display: flex;
+        justify-content: center;
+        /* Centra horizontalmente el ícono en su contenedor */
+        align-items: center;
+        /* Centra verticalmente el ícono dentro de su contenedor */
+        /* Asegura que haya espacio entre el borde derecho y el ícono */
+        z-index: 11;
         cursor: pointer;
     }
 
+    /* Ajustes para la barra de navegación */
+    .container_nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        /* Altura fija para toda la barra */
+        padding: 0 20px;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Alinea verticalmente los elementos (logo e ícono) */
+        z-index: 10;
+    }
+
+    /* Logo dentro de la barra de navegación */
+    .logo {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+    }
+
     .nav {
-        background-color: #000000;
-        width: 100%;
-        max-width: 100%;
         position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
-        padding: 140px 0;
-        display: grid;
+        left: 0;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
-        clip-path: inset(0 0 0 100%);
-        transition: clip-path .6s ease-in-out;
-        z-index: 10;
+        padding-top: 120px;
+        /* Valor por defecto en modo vertical */
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in-out;
+        z-index: 9;
     }
 
+    /* Menú en estado abierto */
     .nav.open {
-        clip-path: inset(0 0 0 0);
+        transform: translateX(0);
     }
 
+    /* Menú en estado cerrado */
     .nav.closed {
-        clip-path: inset(0 0 0 100%);
+        transform: translateX(100%);
     }
 
+    /* Lista de enlaces en el menú */
+    .nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        /* Asegura que ocupe todo el ancho disponible */
+
+    }
+
+    /* Cada elemento de la lista (enlace) en su propia línea */
     .nav ul li {
         width: 100%;
+        /* Ocupa todo el ancho */
+        margin: 10px 0;
         text-align: center;
-        /* padding: 20px; */
-        border-radius: 2px solid white;
-        margin: 3px 0;
+        /* Centra el texto */
     }
 
+    /* Estilo de los enlaces dentro de la lista */
+    .nav ul li a {
+        color: white;
+        font-size: 1.1rem;
+        text-decoration: none;
+        padding: 15px 20px;
+        display: block;
+        width: 100%;
+        /* El enlace ocupa toda la línea */
+        text-align: center;
+        transition: color 0.3s ease;
+    }
 
+    /* Efecto hover para los enlaces */
+    .nav ul li a:hover {
+        color: red;
+    }
+
+    
 }

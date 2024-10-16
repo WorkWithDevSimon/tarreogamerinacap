@@ -1,10 +1,11 @@
 import "./ComponenteNav.css";
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { close, menu } from "../../icon/indexicon";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 export const ComponenteNav = () => {
     const [menuAbierto, setMenuAbierto] = useState(false);
+    const location = useLocation(); // Obtiene la ubicación actual
 
     // Función para alternar el estado del menú
     const alternarMenu = useCallback(() => {
@@ -16,6 +17,12 @@ export const ComponenteNav = () => {
         setMenuAbierto(false);
     }, []);
 
+    // Efecto que se ejecuta al cambiar de ruta
+    useEffect(() => {
+        // Desplazarse al principio de la página sin animación visible
+        document.documentElement.scrollTo(0, 0);
+    }, [location]);
+
     return (
         <header className="header">
             <section className="container_nav">
@@ -23,8 +30,7 @@ export const ComponenteNav = () => {
                     Ta<span>rr</span>eo Ga<span>me</span>r
                 </NavLink>
 
-                {/* Añadir aria-expanded y role para mejorar la accesibilidad */}
-                <nav className={`nav ${menuAbierto ? 'open' : 'closed'}`} aria-expanded={menuAbierto} role="navigation">
+                <nav className={`nav ${menuAbierto ? 'open' : 'closed'}`}>
                     <ul>
                         {[
                             { to: '/', label: 'Inicio' },
@@ -38,7 +44,6 @@ export const ComponenteNav = () => {
                                     to={to}
                                     className={({ isActive }) => (isActive ? 'active' : '')}
                                     onClick={cerrarMenu}
-                                    role="menuitem"
                                 >
                                     {label}
                                 </NavLink>
