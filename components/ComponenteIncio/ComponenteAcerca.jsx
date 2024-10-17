@@ -9,7 +9,7 @@ export const ComponenteAcerca = () => {
             className={`about ${isVisible ? 'animate' : ''}`}  // Aplica la clase 'animate' al hacerse visible
             ref={objetivoRef}
         >
-            <img src={acercaTarreoDatos.imgAcerca} className="img_about" alt="Imagen acerca de mí" />
+            <img src={acercaTarreoDatos.imgAcerca} className="img_about" alt="Imagen about" />
             <div className="about_info">
                 <div className='aboutContenedor'>
                     <h1>{acercaTarreoDatos.titulo}</h1>

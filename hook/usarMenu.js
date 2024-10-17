@@ -15,8 +15,7 @@ const useMenu = () => {
                 // Guardar la posición actual del scroll
                 setScrollPosicion(docElement.scrollTop || document.body.scrollTop);
                 // Bloquear el scroll en el body
-                document.body.style.position = 'fixed';
-                document.body.style.top = `-${docElement.scrollTop || document.body.scrollTop}px`;
+                 document.body.style.top = `-${docElement.scrollTop || document.body.scrollTop}px`;
                 document.body.style.width = '100%'; // Para evitar que cambie el tamaño del body
             } else {
                 // Desbloquear el scroll

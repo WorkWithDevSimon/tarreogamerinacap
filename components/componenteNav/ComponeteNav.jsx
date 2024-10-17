@@ -6,7 +6,7 @@ import usarMenu from "../../hook/usarMenu";
 
 
 export const ComponenteNav = () => {
-    const { menuAbierto, alternarMenu, cerrarMenu } = usarMenu(); // Usar el hook
+  const { menuAbierto, alternarMenu, cerrarMenu } = usarMenu(); // Usar el hook
 
     return (
         <header className="header">
@@ -28,7 +28,7 @@ export const ComponenteNav = () => {
                                 <NavLink
                                     to={to}
                                     className={({ isActive }) => (isActive ? 'active' : '')}
-                                    onClick={cerrarMenu}
+                                    onClick={cerrarMenu} // Cerrar el menú al hacer clic en un enlace
                                 >
                                     {label}
                                 </NavLink>

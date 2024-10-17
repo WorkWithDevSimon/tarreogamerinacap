@@ -19,15 +19,15 @@ export const ComponenteCompetidores = ({ competidores, competicionImg, agregarCl
                 {competidores.map((grupo, index) => (
                     <div className="competidores_info" key={index}>
                         <div className="aboutContenedor">
-                            <p>Equipo {grupo.grupo}</p>
+                            <p>{grupo.grupo}</p>
                         </div>
                         <div>
                             <p>Carrera {grupo.carrera}</p>
                         </div>
                         <ul>
-                            <li>Integrantes</li>
+                            <li className="integrnatestitulo">Integrantes</li>
                             {grupo.integrantes.map((integrante, i) => (
-                                <li key={i}>{integrante}</li>
+                                <li key={i} className="integrnatesli">{integrante}</li>
                             ))}
                         </ul>
                     </div>

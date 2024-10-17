@@ -6,7 +6,7 @@ export const ComponenteBasesDelTorneo = ({ baseFortnite, baseValorant, baseLeagu
         <div className="torneos-container">
             {basesTorneos.map((torneo, index) => (
                 <div className="torneo-card" key={index}>
-                    <h2 className="titulo_base">{`Bases del Torneo de ${torneo.nombre}`}</h2>
+                    <h2 className="titulo_base">{`Bases del torneo de ${torneo.nombre}`}</h2>
                     <h3>Descripción General</h3>
                     <ul>
                         {torneo.descripcion.map((item, i) => (

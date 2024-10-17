@@ -81,4 +81,47 @@ const baseLeagueOfLegends = {
     ]
 };
 
-export {baseFortnite,baseValorant,baseLeagueOfLegends}
+
+
+const baseMitosYLeyendas = {
+    nombre: "Mitos y Leyendas",
+    formato: {
+        modoClasificacion: "Doble eliminación",
+        detalles: [
+            "Los jugadores comenzarán en la llave superior.",
+            "El que pierda un duelo bajará a la llave inferior.",
+            "Si un jugador pierde en la llave inferior, quedará eliminado del torneo."
+        ]
+    },
+    reglasConstruccionMazos: [
+        "El mazo Castillo constará de 50 cartas, y el armado de este estará restringido a algunas reglas.",
+        "Aliados: Cada mazo debe contener un mínimo de 16 cartas de Aliado.",
+        "Oros: Solo se permiten Oros sin habilidades.",
+        "Cartas Raras: Las cartas Ultra Reales (Negras), Promocionales (Verde), Mega Reales (Blanca) y Legendarias (Revisar Por tu cuenta) están limitadas; no pueden haber copias de estas en el mazo. Solo se podrán crear barajas con cartas, vasallas (azules), cortesanas (rojas) y reales (amarillas).",
+        "Combinación de Razas: Los mazos pueden combinar hasta dos razas. Esto es opcional y queda a elección de cada jugador.",
+        "Combinación de Eras: No hay restricciones en cuanto a la combinación de Eras y ediciones. Los jugadores pueden mezclar cartas de diferentes Eras, como Furia Extendido con Imperio y otras disponibles.",
+        "Deck extra: Se permite un deck extra de hasta 10 cartas que pueden ser intercambiadas entre partidas dentro de un mismo enfrentamiento, respetando las reglas de construcción del mazo principal."
+    ],
+    inspeccionMazos: [
+        "Antes de comenzar el torneo, se revisarán todos los mazos para asegurar que cumplen con las reglas establecidas.",
+        "Los jugadores deben presentarse a la inspección con sus mazos completos y listos para jugar."
+    ],
+    juecesYResolucion: [
+        "Habrá jueces designados para el torneo.",
+        "Los jueces serán responsables de resolver cualquier consulta sobre los efectos de las cartas y cómo proceden en el juego.",
+        "La decisión de los jueces será final y debe ser respetada por todos los participantes."
+    ],
+    reglasGenerales: [
+        "Todos los jugadores deben ser respetuosos con sus oponentes y jueces.",
+        "No se permite hacer cambios en los mazos durante el torneo, a excepción de las cartas del deck extra si es que se permite su uso.",
+        "Cualquier forma de trampa o comportamiento antideportivo resultará en la descalificación inmediata del jugador."
+    ],
+    otrasConsideraciones: [
+        "Se recomienda que los jugadores traigan fundas para sus cartas y un tapete de juego para proteger sus cartas durante las partidas.",
+        "Los jugadores deben estar atentos a los horarios de las partidas y presentarse puntualmente."
+    ]
+};
+
+
+
+export { baseFortnite, baseValorant, baseLeagueOfLegends, baseMitosYLeyendas }

@@ -7,6 +7,11 @@
     /* Para posicionar el texto */
 }
 
+.integrnatestitulo,
+.integrnatesli {
+    margin: 5px;
+}
+
 .classComponetesVideojuegos img {
     width: 0px;
     flex-grow: 1;
