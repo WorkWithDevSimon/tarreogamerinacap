@@ -1,9 +1,53 @@
 .cronogramacontenedor {
     text-align: center;
-    /* Centrar contenido */
-    margin: 40px;
+    margin: 70px;
+    border: 1.5px solid;
+
 }
 
+.cronogramacabezera {
+    animation: borderAnimation 4s linear infinite;
+}
+
+.cronogramaParteDeTd {
+    border: 10px solid transparent;
+    overflow: hidden;
+    z-index: 2;
+    animation: borderAnimation 4s linear infinite;
+    /* Aplicar la animación al borde */
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgba(255, 255, 255, 0.8);
+        /* Blanco apagado */
+        box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+
+    25% {
+        border-color: rgba(76, 175, 80, 0.8);
+        /* Verde apagado */
+        box-shadow: 0 0 20px rgba(76, 175, 80, 1);
+    }
+
+    50% {
+        border-color: rgba(255, 0, 0, 0.8);
+        /* Rojo */
+        box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+    }
+
+    75% {
+        border-color: rgba(0, 47, 255, 0.8);
+        /* Azul */
+        box-shadow: 0 0 20px rgba(0, 47, 255, 1);
+    }
+
+    100% {
+        border-color: rgba(255, 255, 255, 0.8);
+        /* Blanco apagado */
+        box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    }
+}
 
 
 
@@ -24,13 +68,15 @@
     border: 1px solid red;
     /* Bordes rojos */
     padding: 8px;
-    background-color: red;
+    background-color:#FF0000;
     /* Cabeceras rojas */
     font-weight: bold;
+    color: #000000;
+
 }
 
 .cronogramaParteDeTd {
-    border: 1px solid red;
+    border: 1.5px solid;
     /* Bordes rojos */
     width: auto;
     text-align: center;
