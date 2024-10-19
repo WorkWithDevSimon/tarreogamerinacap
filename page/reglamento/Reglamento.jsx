@@ -13,6 +13,13 @@ export const Reglamento = () => {
     return (
         <>
             <h1 className="Reglamento_title">Reglamento Tarreo Gamer Inacap Osorno 2024</h1>
+            <div className="loader">
+                <div className="pac-man"></div>
+                <div className="point p1"></div>
+                <div className="point p2"></div>
+            </div>
+
+
             <ComponenteRegla
                 reglasTorneo={normasGenerales} SubituloReglas={"Normas Generales"}></ComponenteRegla>
             <ComponenteRegla

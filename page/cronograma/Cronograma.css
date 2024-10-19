@@ -1,4 +1,49 @@
- 
+.juegoPingPong {
+    height: 80px;
+    border: 5px solid #000;
+    padding: 0 8px;
+    box-sizing: border-box;
+    background:
+        linear-gradient(#fff 0 0) 0 0/8px 20px,
+        linear-gradient(#fff 0 0) 100% 0/8px 20px,
+        radial-gradient(farthest-side, #ff0000 90%, #0000) 0 5px/8px 8px content-box,
+        #000;
+    background-repeat: no-repeat;
+    animation: l3 2s infinite linear;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px;
+}
+
+@keyframes l3 {
+    25% {
+        background-position: 0 0, 100% 100%, 100% calc(100% - 5px)
+    }
+
+    50% {
+        background-position: 0 100%, 100% 100%, 0 calc(100% - 5px)
+    }
+
+    75% {
+        background-position: 0 100%, 100% 0, 100% 5px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .cronograma_title {
     text-align: center;
@@ -12,7 +57,7 @@
     animation: brillo 1.5s infinite alternate;
     /* Animación de brillo */
     margin: 50px 0;
-    margin-top: 80px;
+    margin-top: 70px;
 
 }
 
@@ -23,5 +68,73 @@
 
     100% {
         text-shadow: 2px 2px 4px black, 0 0 25px red, 0 0 10px darkred;
+    }
+}
+
+/* From Uiverse.io by Ratinax */
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.pac-man {
+    width: 5em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side, #000000 98%, #0000) 1.7em 0.61em/.8em .8em no-repeat,
+        #ffcc00;
+    box-shadow: .2em -.6em 1.2em 0em inset rgba(0, 0, 0, 0.7);
+    animation: l4 .5s infinite steps(5) alternate;
+}
+
+.point {
+    margin-top: 2em;
+    position: absolute;
+    margin-left: .4em;
+    width: 1em;
+    height: 1em;
+    background-color: #ffcc00;
+    border-radius: 50%;
+}
+
+.p1 {
+    margin-left: 8em;
+    animation: moove-p1 2s linear infinite;
+}
+
+.p2 {
+    margin-left: 15em;
+    animation: moove-p2 2s linear infinite;
+}
+
+@keyframes moove-p1 {
+    0% {
+        margin-left: 8em;
+    }
+
+    100% {
+        margin-left: 0em;
+    }
+}
+
+@keyframes moove-p2 {
+    0% {
+        margin-left: 16em;
+    }
+
+    100% {
+        margin-left: 8em;
+    }
+}
+
+@keyframes l4 {
+
+    0% {
+        clip-path: polygon(50% 50%, 100% 0, 100% 0, 0 0, 0 100%, 100% 100%, 100% 100%)
+    }
+
+    100% {
+        clip-path: polygon(50% 50%, 100% 65%, 100% 0, 0 0, 0 100%, 100% 100%, 100% 35%)
     }
 }
