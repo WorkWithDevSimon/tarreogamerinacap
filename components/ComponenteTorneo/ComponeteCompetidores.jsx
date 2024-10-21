@@ -19,7 +19,7 @@ export const ComponenteCompetidores = ({ competidores, competicionImg, agregarCl
                 {competidores.map((grupo, index) => (
                     <div className="competidores_info" key={index}>
                         <div className="aboutContenedor">
-                            <p>{grupo.grupo}</p>
+                            <p>Equipo {grupo.grupo}</p>
                         </div>
                         <div>
                             <p>Carrera {grupo.carrera}</p>
@@ -32,6 +32,7 @@ export const ComponenteCompetidores = ({ competidores, competicionImg, agregarCl
                         </ul>
                     </div>
                 ))}
+
             </section>
         </>
     );

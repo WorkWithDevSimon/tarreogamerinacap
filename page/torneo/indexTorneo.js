@@ -4,70 +4,159 @@ const VideojuegoDatos = [counter_strike, VALORANT_logo4, fornite, fornite1, mort
 
 const LeagueofLegends = [
     {
-        grupo: "En procesp",
-        carrera: "Aun nada",
-        integrantes: ["Buscando informacion", "Camila", "Necesito informacion"]
+        grupo: "Glaciar Knights",
+        carrera: "Ingeniería en Informática y Gastronomía",
+        integrantes: ["Nicolás González (Representante) ", "Thiare Yáñez", "Pablo Campos", "Agustín González", "Nicolás Contreras"]
     },
     {
-        grupo: "Papafritas",
-        carrera: "Informatica",
-        integrantes: ["Felipe Ignacio", "Tomas Nose", "Necesito informacion"]
+        grupo: "Skibidi Sigma Team FC",
+        carrera: "Ingeniería en Informática y Gastronomía",
+        integrantes: ["Matías Felipe Díaz (Representante)", "Vicente Cumillaf", "Cristóbal Vásquez", "Cristóbal Molina"]
     },
     {
-        grupo: "Papafritas",
-        carrera: "Informatica",
-        integrantes: ["Felipe Ignacio", "Tomas Nose", "Necesito informacion"]
+        grupo: "Los Malayas",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Diego Sandoval (Representante)", "Benjamín Delgado"]
     },
     {
-        grupo: "Tomate",
-        carrera: "Informatica",
-        integrantes: ["Simón Santibañez", "vale Nose", "Franco Pardo"]
-    }
-];
-const Counter_strike = [
-    {
-        grupo: "Papafritas",
-        carrera: "Informatica",
-        integrantes: ["Felipe Ignacio", "Tomas Nose", "Necesito informacion"]
+        grupo: "sin distintivo",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Vittorio Alfredo Soto Leal (Representante)"]
     },
     {
-        grupo: "Papafritas",
-        carrera: "Informatica",
-        integrantes: ["Felipe Ignacio", "Tomas Nose", "Necesito informacion"]
+        grupo: "sin distintivo",
+        carrera: "Analista Programador",
+        integrantes: ["Joaquín Ignacio Andrade Muñoz (Representante)"]
     },
     {
-        grupo: "Papafritas",
-        carrera: "Informatica",
-        integrantes: ["Felipe Ignacio", "Tomas Nose", "Necesito informacion"]
+        grupo: "sin distintivo",
+        carrera: "Analista Programador",
+        integrantes: ["Daniel Bracho (Representante)"]
     },
-    {
-        grupo: "Tomate",
-        carrera: "Informatica",
-        integrantes: ["Simón Santibañez", "vale Nose", "Franco Pardo"]
-    }
 ];
 const valorant = [
     {
+        grupo: "SpectralOps",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Bastian Rivera (Representante)", "Matías Díaz", "Tomás Lancapichun", "Ricardo Epuyao", "Cristóbal Molina"]
+    },
+    {
+        grupo: "E-ketelecom",
+        carrera: "Telecomunicaciones, conectividad y redes",
+        integrantes: ["Erwin Zapata (Representante)", "Felipe Aguilar", "Bastian Retamal"]
+    },
+    {
         grupo: "Los Malayas",
-        carrera: "Ingeniería informática",
-        integrantes: ["Diego Sandoval", "Nicolás Fernández", "Ignacio Aguero", "Vittorio Soto"]
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Diego Sandoval (Representante)", "Nicolás Fernández", "Benjamín Delgado"]
     },
     {
-        grupo: "Papafritas",
-        carrera: "Informatica",
-        integrantes: ["Felipe Ignacio", "Tomas Nose", "Necesito informacion"]
+        grupo: "Alfa Buena Maravilla Onda Escuadrón Lobo",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Claudio Carrillo (Representante)"]
     },
     {
-        grupo: "Papafritas",
-        carrera: "Informatica",
-        integrantes: ["Felipe Ignacio", "Tomas Nose", "Necesito informacion"]
+        grupo: "Skibidi Sigma FC",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Nicolás González (Representante)", "Agustín González"]
     },
     {
-        grupo: "Tomate",
-        carrera: "Informatica",
-        integrantes: ["Simón Santibañez", "vale Nose", "Franco Pardo"]
+        grupo: "Alfa Buena Maravilla Onda Dinamita Escuadrón Lobo",
+        carrera: "Analista Programador",
+        integrantes: ["Pablo Loyola (Representante)"]
+    },
+    {
+        grupo: "Skibidi Fortnite Team",
+        carrera: "Gastronomía",
+        integrantes: ["Thiare Yáñez (Representante)"]
+    },
+    {
+        grupo: "Los Incapaces",
+        carrera: "Telecomunicaciones",
+        integrantes: ["Bastian Retamal (Representante)"]
+    },
+    {
+        grupo: "Los Malayas",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Diego Sandoval (Representante)", "Felipe Aguero"]
+    },
+    {
+        grupo: "Skibidi Sigma Team FC",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Nicolás Contreras (Representante)"]
+    },
+    {
+        grupo: "sin distintivo",
+        carrera: "Analista Programador",
+        integrantes: ["Pablo (Representante)"]
     }
+
 ];
+
+
+const Counter_strike = [
+    {
+        grupo: "Los Malayas",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Diego Sandoval (Representante)", "Nicolás Fernández"]
+    },
+    {
+        grupo: "sin distintivo",
+        carrera: "Telecomunicaciones",
+        integrantes: ["Bastian Retamal (Representante)"]
+    },
+    {
+        grupo: "sin distintivo",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Vittorio Soto (Representante)"]
+    }
+
+];
+
+const Datosfornite = [
+    {
+        grupo: "Los Malayas",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Nicolás Fernández (Representante)", "Diego Sandoval"]
+    },
+    {
+        grupo: "sin distintivo",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Nicolás Fernández (Representante)"]
+    }
+]
+
+const moraltKombal = [
+    {
+        grupo: "G1",
+        carrera: "Ingeniería en Informática",
+        integrantes: ["Nicolás González (Representante)", "Agustín González"]
+    }
+
+]
+const EA_sports_fc_24 =
+    [
+        {
+            grupo: "Pollos Hermanos",
+            carrera: "Telecomunicaciones, Conectividad y Redes",
+            integrantes: ["Marco Quezada (Representante)", "Felipe Treufo"]
+        },
+        {
+            grupo: "Kizazo",
+            carrera: "Técnico en Electricidad Industrial",
+            integrantes: ["Brandon Sobarzo (Representante)"]
+        },
+        {
+            grupo: "Real Madrid",
+            carrera: "Ingeniería Eléctrica",
+            integrantes: ["Matías Casanova (Representante)"]
+        },
+        {
+            grupo: "sin distintivo",
+            carrera: "Ingeniería en Informática",
+            integrantes: ["Benjamín Miranda (Representante)"]
+        },
+    ]
 
 
 
@@ -84,5 +173,6 @@ const competicionIndividual = [
 
 
 export {
-    VideojuegoDatos, LeagueofLegends, Counter_strike, competicionIndividual, valorant
+    VideojuegoDatos, LeagueofLegends, Counter_strike, valorant, Datosfornite, moraltKombal, EA_sports_fc_24,
+    competicionIndividual
 };

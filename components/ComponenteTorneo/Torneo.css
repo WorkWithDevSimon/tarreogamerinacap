@@ -57,9 +57,7 @@
 
 .btn_cronograma:hover {
     background-color: red;
-    /* Color de fondo al pasar el ratón */
     border-color: rgb(0, 0, 0);
-    /* Borde blanco al pasar el ratón */
     color: #ffffff;
     transform: translate(-50%, -50%) scale(1.05);
     /* Escalado al pasar el ratón */
