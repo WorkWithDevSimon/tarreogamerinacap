@@ -68,7 +68,7 @@
     border: 1px solid red;
     /* Bordes rojos */
     padding: 8px;
-    background-color:#FF0000;
+    background-color: #FF0000;
     /* Cabeceras rojas */
     font-weight: bold;
     color: #000000;
@@ -76,7 +76,7 @@
 }
 
 .cronogramaParteDeTd {
-    border: 1.5px solid;
+    border: 1px solid;
     /* Bordes rojos */
     width: auto;
     text-align: center;
