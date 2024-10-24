@@ -16,9 +16,9 @@ export const BasesDelTorneo = () => {
                 baseValorant={baseValorant}
                 baseLeagueOfLegends={baseLeagueOfLegends}
             ></ComponenteBasesDelTorneo>
+            <ComponenteBaseDelTorneo4 torneoCounter={torneoCounterr}></ComponenteBaseDelTorneo4>
             <ComponenteBasesDelTorneo2 baseMitosYLeyendas={baseMitosYLeyendas} ></ComponenteBasesDelTorneo2>
             <ComponenteBasesDelTorneo3 torneo={torneoEA}></ComponenteBasesDelTorneo3>
-            <ComponenteBaseDelTorneo4 torneoCounter={torneoCounterr}></ComponenteBaseDelTorneo4>
         </>
     )
 }
