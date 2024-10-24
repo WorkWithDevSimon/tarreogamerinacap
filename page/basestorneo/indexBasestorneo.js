@@ -123,5 +123,105 @@ const baseMitosYLeyendas = {
 };
 
 
+const torneoEA = {
+    nombre: "EA Sports FC24",
+    descripcionGeneral: {
+        modalidad: "Individual",
+        plataforma: "Consola (PlayStation, Xbox), PC",
+        formatoTorneo: "Eliminación directa, partidos 1v1",
+        versionJuego: "EA Sports FC24 (última actualización disponible)"
+    },
+    fechaYHorario: {
+        inicio: "18 de octubre de 2024",
+        duracion: "12-15 minutos por partido (2 tiempos de 6-7 minutos cada uno)",
+        final: "19 de octubre de 2024"
+    },
+    premios: {
+        primerLugar: "Galvano + Disco Duro Externo 500GB",
+        otroLugar: "Diploma de Participación"
+    },
+    reglasJuego: {
+        duracionPartido: "2 tiempos de 6-7 minutos",
+        tipoPartidos: "Partidos de exhibición en modo 1v1",
+        dificultad: "Legendario",
+        equiposPermitidos: "Cualquier equipo de clubes o selecciones nacionales disponibles en el juego",
+        condicionesVictoria: "El jugador que gane el partido avanza a la siguiente ronda",
+        empates: "Tiempo extra y penales si es necesario"
+    },
+    formatoTorneo: {
+        faseEliminacion: "Eliminación directa (knockout)",
+        final: "1v1, duración estándar"
+    },
+    inscripcionYRequisitos: {
+        inscripcion: "Encuesta oficial del Tarreo Gamer Inacao Osorno 2024",
+        requisitos: "Ser estudiante de INACAP"
+    },
+    configuracionYAvance: {
+        velocidadJuego: "Normal",
+        lesiones: "Activadas",
+        clima: "Desactivado",
+        estadio: "A elección del jugador local",
+        criteriosAvance: "Tiempo extra y penales si es necesario"
+    },
+    contactoYSoporte: {
+        organizadores: "Inacap, Sede Osorno",
+        contacto: "javier.elgueta03@inacapmail.cl",
+        canales: "Discord: https://discord.gg/CBUuPV7w"
+    }
+};
 
-export { baseFortnite, baseValorant, baseLeagueOfLegends, baseMitosYLeyendas }
+const torneoCounterr = {
+    nombre: "Counter Strike",
+    descripcionGeneral: {
+        modalidad: "Individual",
+        formatoTorneo: "Deathmatch/Gungame",
+        numeroParticipantes: "Máximo de 20 jugadores por partida",
+        plataforma: "PC",
+        versionJuego: "Counter Strike: versión 1.6"
+    },
+    fechaYHorario: {
+        inicio: "18 de octubre de 2024",
+        duracion: "10-15 minutos por partida",
+        final: "19 de octubre de 2024"
+    },
+    premios: {
+        primerLugar: "Galvano + Disco Duro Externo 500GB",
+        segundoLugar: "Diploma por participación"
+    },
+    reglasJuego: {
+        modoJuego: "Deathmatch/Gungame",
+        duracionPartida: "10-15 minutos",
+        condicionesVictoria: "Mayor número de puntos al final del tiempo",
+        puntuacion: {
+            killEstandar: "1 punto",
+            killArmaEspecifica: "2 puntos",
+            knifeKill: "3 puntos"
+        },
+        reglasDesempate: "Partida adicional a muerte súbita en caso de empate"
+    },
+    comportamiento: {
+        usoHacks: "Prohibido el uso de hacks o cheats",
+        actitudDeportiva: "Cualquier conducta antideportiva será sancionada"
+    },
+    formatoTorneo: {
+        faseGrupos: "División en grupos de hasta 20 jugadores, avanzan los mejores",
+        eliminacionDirecta: "Formato de eliminación directa tras fase de grupos"
+    },
+    inscripcionYRequisitos: {
+        inscripcion: "Encuesta oficial del Tarreo Gamer 2024",
+        requisitos: "Ser estudiante de la universidad",
+        documentacion: "Presentar credencial virtual"
+    },
+    puntuacionYAvance: {
+        sistemaPuntuacion: "Kill estándar: 1 punto, Kill con arma específica: 2 puntos, Knife kill: 3 puntos",
+        clasificacion: "Jugadores con mayor puntaje avanzan a eliminación directa"
+    },
+    contactoYSoporte: {
+        organizadores: "Inacap, Sede Osorno",
+        contacto: "javier.elgueta03@inacapmail.cl",
+        canales: "Discord: https://discord.gg/CBUuPV7w"
+    }
+};
+
+
+export { baseFortnite, baseValorant, baseLeagueOfLegends, baseMitosYLeyendas, torneoEA,torneoCounterr}

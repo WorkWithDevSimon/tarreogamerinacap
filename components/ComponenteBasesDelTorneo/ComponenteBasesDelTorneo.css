@@ -1,6 +1,5 @@
 .torneos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
     /* Distribuye los elementos */
     gap: 20px;
     /* Espacio entre tarjetas */
@@ -65,6 +64,17 @@
     color: white;
 }
 
+@media (max-width: 900px) {
+    .torneos-container {
+        flex-wrap: wrap;
+
+
+
+    }
+
+
+}
+
 /* Media query para pantallas de 350px o menores */
 @media (max-width: 350px) {
     .torneos-container {
@@ -88,4 +98,3 @@
         /* Ajusta el tamaño del título */
     }
 }
-

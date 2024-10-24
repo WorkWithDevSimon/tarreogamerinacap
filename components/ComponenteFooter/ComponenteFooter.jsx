@@ -1,5 +1,5 @@
 import './ComponenteFooter.css';
-import { instagram, facebook } from "../../icon/indexicon";
+import { instagram, facebook, discord } from "../../icon/indexicon";
 
 export const ComponenteFooter = () => {
     return (
@@ -12,10 +12,13 @@ export const ComponenteFooter = () => {
 
                     <div className="redes_sociales">
                         <a href="https://www.instagram.com/inacap_osorno/" target='_blank'>
-                            <img src={instagram} alt="icono de instagram" />
+                            <img src={instagram} alt="icono de instagram"/>
                         </a>
-                        <a href="https://www.facebook.com/iinacaposorno" target='_blank' >
-                            <img src={facebook} alt="icono de facebook" />
+                        <a href="https://www.facebook.com/inacaposorno" target='_blank' >
+                            <img src={facebook} alt="icono de facebook"/>
+                        </a>
+                        <a href=" " target='_blank' >
+                            <img src={discord} alt="icono de discord"/>
                         </a>
                     </div>
                 </div>
